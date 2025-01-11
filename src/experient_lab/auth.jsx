@@ -52,7 +52,7 @@ export default function SignupForm() {
         })
         .catch((err)=>{
             const credential = GoogleAuthProvider.credentialFromError(err)
-            console.log("Err Credential:",err);
+            alert(err);
             
         })
     }
